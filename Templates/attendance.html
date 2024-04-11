@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <h2>Mark Attendance</h2>
+  <form method="POST">
+        <label for="course">Select Course:</label>
+        <select id="course" name="course">
+            <option value="Math">Math</option>
+            <option value="Science">Science</option>
+            <option value="English">English</option>
+        </select><br><br>
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+        <input type="submit" value="Mark Attendance">
+    </form>
+
+{% endblock %}
+
